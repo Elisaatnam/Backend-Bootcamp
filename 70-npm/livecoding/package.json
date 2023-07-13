@@ -1,0 +1,16 @@
+{
+	"name": "cowsay",
+	"version": "1.0.0",
+	"description": "what does the cow say",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"hello": "cowsay HELLLOOO"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cowsay": "^1.5.0"
+	}
+}

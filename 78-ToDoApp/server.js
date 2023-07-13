@@ -16,8 +16,9 @@ app.get("/todos", async (req, res) => {
 	const alleToDos = await allToDos();
 	res.send(alleToDos);
 });
-app.get("/todos/:id", (req, res) => {
-	res.send();
+app.get("/todos/:id", async (req, res) => {
+	const singleToDo = await toDoByID(req.params.id);
+	res.send(singleToDo);
 });
 app.post("/todos", async (req, res) => {
 	const newToDo = await addToDo(req.body);

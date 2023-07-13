@@ -60,7 +60,7 @@ export const updateSingleToDo = async (id, updatedToDo) => {
 //!Funktion zum loeschen eines einzelnen To Do's
 export const deleteSingleToDo = async id => {
 	const index = fileContent.findIndex(item => item.id === id);
-	const deletedToDo = fileContent.splice(index, 1);
+	fileContent.splice(index, 1);
 
 	await write();
 	return fileContent;

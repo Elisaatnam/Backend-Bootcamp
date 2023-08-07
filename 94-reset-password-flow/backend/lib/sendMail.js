@@ -5,7 +5,6 @@ import Mailgun from "mailgun.js";
 const mailgun = new Mailgun(FormData);
 
 // Our sandbox domain form mailgun
-const sandbox = "sandboxedb7fdd1bd784d3e83432639fc248c6c.mailgun.org";
 
 // When send mail gets no parameter use this default setup
 const defaultOptions = {

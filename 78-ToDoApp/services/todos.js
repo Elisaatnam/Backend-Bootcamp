@@ -52,6 +52,7 @@ export const toDoByID = async id => {
 //!Funktion zum editieren/aktualisieren eines einzelnen To Do's
 export const updateSingleToDo = async (id, updatedToDo) => {
 	const selectedToDo = fileContent.find(item => item.id === id);
+
 	Object.assign(selectedToDo, updatedToDo);
 	await write();
 	return fileContent;
